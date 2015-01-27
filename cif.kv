@@ -1,0 +1,30 @@
+SearchCIF:
+
+<SearchCIF>:
+    orientation: "vertical"
+    search_input: search_box
+    search_results: search_results_list
+    BoxLayout:
+        height: "40dp"
+        size_hint_y: None
+        TextInput:
+            id: search_box
+            size_hint_x: 70
+            multiline: False
+            on_text_validate: root.search()
+        Button:
+            text: "Submit"
+            size_hint_x: 15
+            on_press: root.search()
+        Spinner:
+            text: "Confidence"
+            values: ["50", "60", "70", "80", "90"]
+            size_hint_x: 15
+    ListView:
+        id: search_results_list
+        item_strings: []
+    BoxLayout:
+        height: "40dp"
+        size_hint_y: None
+        Button:
+            text: "Settings"
