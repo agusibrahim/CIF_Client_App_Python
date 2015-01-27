@@ -22,8 +22,8 @@ class SearchCIF(BoxLayout):
         :param result_data: Contains the referenced json data based on key:value pair called.
         """
 
-        apikey = 'f079399a-28f8-4874-8bc3-b916fb1cd16c'
-        host = 'https://cif.laelapssecurity.net/'
+        apikey = removed for my peace of mind
+        host = removed for my peace of mind
         data = self.search_input.text
         headers = {'accept': 'application/json'}
         url = ('%sapi?apikey=%s&q=%s' % (host, apikey, data))
