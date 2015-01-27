@@ -31,8 +31,8 @@ def query(host, key, data):
 
 if __name__ == '__main__':
 
-    host = 'https://cif.laelapssecurity.net/'
-    key = 'f079399a-28f8-4874-8bc3-b916fb1cd16c'
+    host =
+    key = 
     data = 'example.com'
 
     query(host, key, data)
